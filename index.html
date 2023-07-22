@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+
+    <body>
+        <img id="video" src="/video">
+        <img id="segmented_video" src="/segmented_video">
+
+        <script>
+            // Update the videos every 100 ms
+            setInterval(function () {
+                document.getElementById('video').src = "/video?" + new Date().getTime();
+                document.getElementById('segmented_video').src = "/segmented_video?" + new Date().getTime();
+            }, 100);
+        </script>
+    </body>
+
+</html>
